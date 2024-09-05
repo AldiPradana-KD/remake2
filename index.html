@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software House Company Profile</title>
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Aldi Software</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end bg-dark" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#Hero">Home</a></li>
+              <li><a class="dropdown-item" href="#about">About Us</a></li>
+              <li><a class="dropdown-item" href="#services">Services</a></li>
+              <li><a class="dropdown-item" href="#technologies">Technologies</a></li>
+              <li><a class="dropdown-item" href="#process">Process</a></li>
+              <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+              <li><a class="dropdown-item" href="#team">Team</a></li>
+              <li><a class="dropdown-item" href="#testimonials">Testimonials</a></li>
+              <li><a class="dropdown-item" href="#clients">Partners</a></li>
+              <li><a class="dropdown-item" href="#contact">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <style>
+    /* Hero Section Styles */
+    #hero {
+      position: relative;
+      background: url('assets/about.jpg') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      /* Semi-transparent overlay */
+      backdrop-filter: blur(5px);
+      /* Blur effect */
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+      animation: fadeInUp 1s ease-out 0.5s;
+    }
+
+    .btn-primary {
+      background-color: #262c32;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.25rem;
+      border-radius: 50px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      text-transform: uppercase;
+    }
+
+    .btn-primary:hover {
+      background-color: #44494f;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Welcome to Aldi Software</h1>
+      <h2>Kami menciptakan solusi yang mendorong kesuksesan</h2>
+      <button class="glow-on-hover" type="button" onclick="window.location.href='#contact'">CONTACT ME!</button>
+    </div>
+  </section>
+
+  <section id="about" class="about-section py-5 border-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>About Us</h2>
+          <p><b>Aldi Software</b> adalah perusahaan perangkat lunak terkemuka yang mengkhususkan diri dalam memberikan
+            solusi perangkat lunak khusus yang memberdayakan bisnis untuk berkembang di era digital. Dengan tim
+            pengembang, desainer, dan konsultan TI yang berpengalaman, kami berkomitmen untuk mengubah ide Anda menjadi
+            produk perangkat lunak yang inovatif dan berkinerja tinggi. Misi kami adalah mendorong kesuksesan bagi klien
+            kami dengan menyediakan teknologi mutakhir, kualitas luar biasa, dan dukungan yang andal di setiap langkah.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <img src="assets/about2.jpg" alt="About Us" class="img-fluid" width="100%">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="services" class="services-section py-5">
+    <div class="container">
+      <h2 class="text-center">Our Services</h2>
+      <div class="row mt-4">
+        <div class="col-md-4 mb-3">
+          <div class="service-box text-center">
+            <i class="bi bi-laptop"></i>
+            <h4>Web Development</h4>
+            <p>Di <b>Aldi Software</b>, kami membuat situs web responsif yang berfokus pada pengguna yang tidak hanya
+              tampak hebat tetapi
+              juga memberikan kinerja yang luar biasa. Tim pengembang ahli kami memanfaatkan teknologi terkini untuk
+              membangun situs web yang
+              aman, dapat diskalakan, dan ramah SEO yang disesuaikan untuk memenuhi kebutuhan bisnis Anda. Baik Anda
+              meluncurkan situs baru atau
+              merombak situs yang sudah ada, kami memastikan pengalaman online yang lancar dan menarik bagi audiens
+              Anda.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="service-box text-center">
+            <i class="bi bi-phone"></i>
+            <h4>Mobile Development</h4>
+            <p>Ubah ide Anda menjadi aplikasi seluler yang hebat dengan layanan pengembangan seluler kami yang ahli. Di
+              <b>Aldi Software</b>,
+              kami membuat aplikasi yang mudah digunakan dan berkinerja tinggi yang dirancang untuk memenuhi kebutuhan
+              unik bisnis Anda.
+              Baik itu pengembangan iOS, Android, atau lintas platform, tim kami memberikan solusi seluler yang lancar,
+              terukur, dan aman yang
+              melibatkan pengguna dan mendorong pertumbuhan bisnis.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="service-box text-center">
+            <i class="bi bi-gear"></i>
+            <h4>Consultation</h4>
+            <p>Di <b>Aldi Software</b>, kami menawarkan layanan konsultasi TI ahli untuk membantu Anda memahami
+              kompleksitas teknologi.
+              Baik Anda ingin menyederhanakan operasi, mengembangkan solusi perangkat lunak baru, atau menyempurnakan
+              sistem yang sudah ada,
+              konsultan kami memberikan saran yang disesuaikan dan panduan strategis untuk memastikan keberhasilan Anda.
+              Kami bekerja sama erat
+              dengan Anda untuk memahami kebutuhan unik Anda, mengidentifikasi peluang, dan memberikan wawasan yang
+              dapat ditindaklanjuti yang
+              mendorong bisnis Anda maju.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- HTML -->
+  <section id="technologies" class="technologies-section py-5 background-color">
+    <div class="container">
+      <h2 class="text-center mb-4">Technologies We Use</h2>
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-3 col-sm-6 text-center mb-4">
+          <div class="tech-item">
+            <img src="assets/css.png" alt="CSS" class="img-fluid tech-img">
+            <h5 class="tech-label">CSS</h5>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center mb-4">
+          <div class="tech-item">
+            <img src="assets/html.png" alt="HTML" class="img-fluid tech-img">
+            <h5 class="tech-label">HTML</h5>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center mb-4">
+          <div class="tech-item">
+            <img src="assets/php.png" alt="PHP" class="img-fluid tech-img">
+            <h5 class="tech-label">PHP</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section id="process" class="process-section py-5">
+    <div class="container">
+      <h2 class="text-center">Our Process</h2>
+      <ul class="process-list mt-4">
+        <li class="process-item">
+          <h4>Consultation</h4>
+          <p>Kami memulai proses dengan sesi konsultasi mendalam untuk memahami kebutuhan dan tujuan bisnis Anda. Tim
+            ahli kami akan
+            berdiskusi dengan Anda untuk mengidentifikasi tantangan yang Anda hadapi, serta peluang yang ada.</p>
+          <p>Kami berkomitmen untuk memastikan bahwa setiap detail ditangani dengan cermat untuk menyediakan solusi yang
+            tepat sasaran dan efektif.</p>
+        </li>
+        <li class="process-item">
+          <h4>Development</h4>
+          <p>Setelah memahami kebutuhan dan tujuan Anda secara mendalam, tim kami memulai tahap pengembangan dengan
+            merancang solusi perangkat
+            lunak yang sesuai dengan spesifikasi Anda. Kami menggunakan metodologi pengembangan terbaru untuk memastikan
+            kualitas dan efisiensi.
+            Dengan pendekatan berbasis agile, kami membangun dan mengembangkan perangkat lunak dengan fitur-fitur yang
+            dibutuhkan untuk mencapai
+            tujuan bisnis Anda.</p>
+        </li>
+        <li class="process-item">
+          <h4>Testing</h4>
+          <p>Pada tahap ini, kami melakukan serangkaian pengujian menyeluruh untuk memastikan kualitas dan
+            fungsionalitas produk Anda.
+            Tim kami menjalankan uji coba mendalam untuk mengidentifikasi dan memperbaiki masalah sebelum peluncuran.
+            Kami menguji aplikasi
+            atau situs web di berbagai perangkat dan browser untuk memastikan kompatibilitas dan performa yang optimal.
+          </p>
+          <p>Tujuan kami adalah memastikan bahwa produk akhir tidak hanya memenuhi tetapi melebihi harapan Anda sebelum
+            diluncurkan ke publik.</p>
+        </li>
+        <li class="process-item">
+          <h4>Launch</h4>
+          <p>Setelah tahap pengembangan dan pengujian selesai, kami mempersiapkan peluncuran produk Anda dengan cermat.
+            Tim kami memastikan bahwa
+            semua aspek teknis berfungsi dengan baik, dan produk siap untuk digunakan oleh audiens target Anda. Kami
+            mengelola semua detail dari
+            peluncuran, termasuk penyebaran, konfigurasi akhir, dan pemantauan awal. Tujuan kami adalah memastikan
+            transisi yang mulus dan sukses,
+            serta memberikan dukungan purna jual untuk mengatasi setiap tantangan yang mungkin muncul.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- HTML -->
+  <!-- HTML -->
+  <section id="portfolio" class="portfolio-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Portfolio</h2>
+      <div class="row mt-4">
+        <div class="col-md-4 mb-4 d-flex">
+          <div class="portfolio-item text-center p-3 shadow-sm rounded flex-fill">
+            <img src="assets/porto1.png" class="img-fluid rounded mb-3" alt="Project 1">
+            <h4>Virtual Meeting</h4>
+            <p>Dalam era digital saat ini, pertemuan virtual menjadi bagian penting dari proses kami.</p>
+            <p>Dengan menggunakan alat pertemuan virtual yang canggih, kami memastikan bahwa setiap langkah proyek
+              dilakukan dengan transparansi
+              dan kolaborasi yang maksimal.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 d-flex">
+          <div class="portfolio-item text-center p-3 shadow-sm rounded flex-fill">
+            <img src="assets/proto2.jpg" class="img-fluid rounded mb-3" alt="Project 2">
+            <h4>Platform e-commers</h4>
+            <p>Mengembangkan platform e-commerce yang kuat dengan kemampuan pencarian canggih, integrasi pembayaran yang
+              aman, dan desain responsif.
+              Platform ini dioptimalkan untuk penggunaan desktop dan mobile, menawarkan pengalaman berbelanja yang
+              mulus.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 d-flex">
+          <div class="portfolio-item text-center p-3 shadow-sm rounded flex-fill">
+            <img src="assets/porto3.jpeg" class="img-fluid rounded mb-3" alt="Project 3">
+            <h4>Mobile Banking</h4>
+            <p>Merancang aplikasi perbankan seluler yang ramah pengguna dengan fitur seperti pembaruan saldo waktu
+              nyata, riwayat transaksi,
+              dan login yang aman.</p>
+            <p>Aplikasi ini dibangun untuk memastikan kinerja dan keamanan yang tinggi, memenuhi kebutuhan pelanggan
+              perbankan modern.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CSS -->
+  <style>
+    .portfolio-item {
+      background-color: #f5f5dc;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .portfolio-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .portfolio-item img {
+      max-height: 200px;
+      object-fit: cover;
+    }
+
+    .portfolio-item h4 {
+      font-size: 1.25rem;
+      margin-top: 10px;
+      color: #333;
+    }
+
+    .portfolio-item p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .portfolio-item img {
+        max-height: 150px;
+      }
+    }
+  </style>
+
+
+  <section id="team" class="team-section py-5">
+    <div class="container">
+      <h2 class="text-center">Meet Our Team</h2>
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-3 text-center">
+          <img src="assets/kevin.jpg" class="img-fluid rounded-circle" alt="Team Member 1">
+          <h4>Kevin Irawan</h4>
+          <p>Manager</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <img src="assets/aldi.jpg" class="img-fluid rounded-circle" alt="Team Member 2">
+          <h4>Aldi Pradana</h4>
+          <p>CEO</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <img src="assets/afkar.jpg" class="img-fluid rounded-circle" alt="Team Member 3">
+          <h4>Afkar Rahmat</h4>
+          <p>Honorer</p>
+        </div>
+        <!-- Tambahkan anggota tim lainnya di sini -->
+      </div>
+    </div>
+  </section>
+
+ <!-- HTML -->
+<section id="testimonials" class="testimonials-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">What Our Clients Say</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4 d-flex">
+        <div class="testimonial-card p-4 shadow-sm rounded flex-fill">
+          <blockquote class="blockquote mb-4">
+            <p>"Kami sangat puas dengan hasil yang diberikan oleh Aldi Software. Tim mereka tidak hanya
+              memahami visi kami tetapi juga mampu menerjemahkannya ke dalam solusi teknologi yang luar biasa.
+              Proyek kami selesai tepat waktu dan melebihi ekspektasi kami."</p>
+          </blockquote>
+          <footer class="blockquote-footer">Udin Marvel, <cite title="Source Title">CEO, Tech Innovations</cite></footer>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 d-flex">
+        <div class="testimonial-card p-4 shadow-sm rounded flex-fill">
+          <blockquote class="blockquote mb-4">
+            <p>"Aldi Software telah menjadi mitra teknologi yang sangat berharga. Mereka tidak hanya
+              menyediakan solusi perangkat lunak yang handal tetapi juga memberikan dukungan purna jual yang luar biasa.
+              Kami merasa yakin dan aman bekerja dengan mereka."</p>
+          </blockquote>
+          <footer class="blockquote-footer">Juki Sakura, <cite title="Source Title">Founder, Creative Ventures</cite></footer>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CSS -->
+<style>
+  .testimonial-card p{
+    font-size: 0,9rem;
+    color: #555 ;
+  }
+.testimonial-card {
+    background-color: #f5f5dc;
+    border-left: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blockquote {
+    font-style: italic;
+    color: #555;
+}
+
+.blockquote-footer {
+    font-size: 0.85rem;
+    color: #333;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .testimonial-card {
+        margin-bottom: 20px;
+    }
+}
+</style>
+
+<section id="clients" class="clients-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Our Partners</h2>
+    <div class="row text-center">
+      <div class="col-md-3 col-sm-6 mb-4 partner-item">
+        <div class="partner-card">
+          <img src="assets/partner1.png" class="img-fluid" alt="Partner 1">
+          <h5 class="mt-3">Sate Pak Ujang</h5>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4 partner-item">
+        <div class="partner-card">
+          <img src="assets/partner2.png" class="img-fluid" alt="Partner 2">
+          <h5 class="mt-3">Bakso jln.Durian</h5>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4 partner-item">
+        <div class="partner-card">
+          <img src="assets/partner3.png" class="img-fluid" alt="Partner 3">
+          <h5 class="mt-3">Ramen Ucihan Udin</h5>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4 partner-item">
+        <div class="partner-card">
+          <img src="assets/partner4.png" class="img-fluid" alt="Partner 4">
+          <h5 class="mt-3">Fried Chicken Wawan</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Contact Us</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-4">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-4">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 glow-on-hover">SEND MESSAGE</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer-section bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <!-- Contact Info Section -->
+      <div class="col-md-4">
+        <p><strong>Location:</strong> Sukajadi, Pekanbaru</p>
+        <p><strong>Email:</strong> <a href="mailto:aldicontoh@gmail.com" class="text-white">aldicontoh@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+6285232193832" class="text-white">085232193832</a></p>
+      </div>
+      <!-- Social Media Links -->
+      <div class="col-md-4 d-flex justify-content-center align-items-center">
+        <div class="social-links">
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="row mt-4">
+      <div class="col text-center">
+        <p class="mb-0">&copy; 2024 Aldi Software. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- CSS -->
+<style>
+.contact-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.form-control {
+    border-radius: 0.3rem;
+    padding: 0.75rem 1rem;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: 0.75rem;
+}
+.footer-section {
+    background-color: #222;
+    color: #ccc;
+}
+
+.footer-section a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 2rem 0;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .social-links {
+        margin-top: 1rem;
+    }
+}
+</style>
+
+</body>
+</html>

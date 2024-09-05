@@ -1,0 +1,316 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #12122a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.section-title {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: #ff0000;
+}
+
+#hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/00.jpg') center center;
+  background-size: cover;
+}
+
+.service-box h4 {
+  color: #555;
+}
+
+.service-box p {
+  color: #555;
+}
+/* Ensure the row uses flexbox */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Flexbox to align items evenly */
+.service-box {
+  background-color: #f5f5dc;
+  border: 2px solid #ccc; /* Border style */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Spacing inside the border */
+  margin-bottom: 10px; /* Space between service boxes */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Optional: shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Optional: hover effect */
+  display: flex; /* Flexbox for alignment */
+  flex-direction: column; /* Align content vertically */
+  justify-content: space-between; /* Distribute space evenly */
+  height: 100%; /* Ensure boxes fill the available height */
+}
+
+/* Optional: Hover effect */
+.service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/*batas*/
+.process-section {
+  padding: 40px 0;
+}
+
+.process-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.process-item {
+  background-color: #f5f5dc;
+  border: 2px solid #ffffff;
+  /* Border color */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  /* Include padding and border in the element's total width and height */
+}
+
+.process-item h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+  color: #555;
+  /* Heading color */
+}
+
+.process-item p {
+  color: #555;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Ensure items are aligned properly */
+.process-item {
+  text-align: justify;
+  /* Align text to both left and right edges */
+}
+
+.process-item::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*batas*/
+.team-section img {
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.team-section img:hover {
+  transform: scale(1.1);
+}
+
+blockquote {
+  border-left: 5px solid #555;
+  padding: 20px;
+  margin: 0;
+}
+
+p {
+  color: #ffffff;
+  font-size: 0, 9rem;
+}
+
+label {
+  color: #ffffff;
+}
+
+/*batas*/
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .bi {
+  font-size: 1.5rem;
+}
+
+/*batas*/
+.clients-section h2 {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.partner-item {
+  transition: transform 0.3s ease;
+}
+
+.partner-item:hover {
+  transform: translateY(-10px);
+}
+
+.partner-card {
+  padding: 20px;
+  background-color: #f5f5dc;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.partner-card img {
+  width: 70%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.partner-card:hover img {
+  transform: scale(1.05);
+}
+
+.partner-card h5 {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .partner-card img {
+    width: 60%;
+  }
+}
+
+.dropdown-item {
+  color: #ffffff;
+}
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+@media (max-width: 991.98px) {
+  .navbar .nav-item {
+    margin: 0.5rem 0;
+  }
+}
+
+.border-section {
+  background-color: #f5f5dc;
+  margin: 15px;
+  border: 2px solid #ccc; /* Adjust the border width, style, and color as needed */
+  border-radius: 8px; /* Optional: for rounded corners */
+  padding: 20px; /* Optional: to add spacing inside the border */
+}
+
+.border-section p {
+  color: #555;
+}
+
+.border-section h2 {
+  color: #555;
+}
+
+/* Section Styles */
+.tech-item {
+  background-color: #f5f5dc;
+  border: 2px solid #ddd; /* Light grey border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Spacing around the image and label */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation for hover effects */
+}
+
+.tech-item:hover {
+  transform: scale(1.05); /* Slightly zoom in on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.tech-img {
+  border-radius: 4px; /* Slightly rounded corners for the image */
+  width: 100px; /* Set a fixed width */
+  height: 100px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image covers the area */
+}
+
+.tech-label {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #555;
+}
