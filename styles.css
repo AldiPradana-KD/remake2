@@ -1,18 +1,14 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background: #12122a;
+  background: #f4f4dc;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #ffffff;
+.navbar a {
+  color: #555;
 }
-
+.navbar {
+  background-color: #111;
+}
 .section-title {
   text-transform: uppercase;
   margin-bottom: 40px;
@@ -24,12 +20,14 @@ h5 {
   background-size: cover;
 }
 
-.service-box h4 {
+.service-box h5 {
   color: #555;
+  font-size: 30px;
 }
 
 .service-box p {
   color: #555;
+  font-size: 16px;
 }
 /* Ensure the row uses flexbox */
 .row {
@@ -38,8 +36,8 @@ h5 {
 }
 /* Flexbox to align items evenly */
 .service-box {
-  background-color: #f5f5dc;
-  border: 2px solid #ccc; /* Border style */
+  background-color: #ffafc1;
+  border: 2px solid #000000; /* Border style */
   border-radius: 8px; /* Rounded corners */
   padding: 15px; /* Spacing inside the border */
   margin-bottom: 10px; /* Space between service boxes */
@@ -69,8 +67,8 @@ h5 {
 }
 
 .process-item {
-  background-color: #f5f5dc;
-  border: 2px solid #ffffff;
+  background-color: #ffafc1;
+  border: 2px solid #000000;
   /* Border color */
   border-radius: 8px;
   padding: 20px;
@@ -83,14 +81,16 @@ h5 {
 .process-item h4 {
   margin-top: 0;
   margin-bottom: 15px;
-  font-size: 1.25rem;
+  font-size: 30px;
   color: #555;
   /* Heading color */
 }
-
+.process-item h2 {
+  font-size: 40px;
+}
 .process-item p {
   color: #555;
-  font-size: 0.9rem;
+  font-size: 16px;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -114,6 +114,14 @@ h5 {
   transition: transform 0.3s;
 }
 
+.team-section p {
+  font-size: 16px;
+}
+
+.team-section h4 {
+  font-size: 30px;
+}
+
 .team-section img:hover {
   transform: scale(1.1);
 }
@@ -124,13 +132,8 @@ blockquote {
   margin: 0;
 }
 
-p {
-  color: #ffffff;
-  font-size: 0, 9rem;
-}
-
 label {
-  color: #ffffff;
+  color: #555;
 }
 
 /*batas*/
@@ -216,7 +219,6 @@ footer .bi {
 
 /*batas*/
 .clients-section h2 {
-  font-weight: 600;
   margin-bottom: 30px;
 }
 
@@ -230,7 +232,7 @@ footer .bi {
 
 .partner-card {
   padding: 20px;
-  background-color: #f5f5dc;
+  background-color: #ffafc1;
   border-radius: 10px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
 }
@@ -247,6 +249,7 @@ footer .bi {
 
 .partner-card h5 {
   color: #333;
+  font-size: 30px;
 }
 
 @media (max-width: 768px) {
@@ -273,25 +276,31 @@ footer .bi {
 }
 
 .border-section {
-  background-color: #f5f5dc;
-  margin: 15px;
-  border: 2px solid #ccc; /* Adjust the border width, style, and color as needed */
+  background-color: #ffafc1;
+  margin: 25px;
+  border: 2px solid #000000; /* Adjust the border width, style, and color as needed */
   border-radius: 8px; /* Optional: for rounded corners */
   padding: 20px; /* Optional: to add spacing inside the border */
 }
 
 .border-section p {
   color: #555;
+  font-size: 16px;
 }
 
 .border-section h2 {
   color: #555;
+  font-size: 40px;
+}
+
+.border-section img {
+  margin-left: 30px;
 }
 
 /* Section Styles */
 .tech-item {
-  background-color: #f5f5dc;
-  border: 2px solid #ddd; /* Light grey border */
+  background-color: #ffafc1;
+  border: 2px solid #000000; /* Light grey border */
   border-radius: 8px; /* Rounded corners */
   padding: 20px; /* Spacing around the image and label */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation for hover effects */
